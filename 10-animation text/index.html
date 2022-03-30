@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/libs/animate.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>I'm <span class="auto-type"></span></h1>
+    </div>
+
+    <script src="js/autoType.js"></script>
+    <script src="dist/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      var type = new Typed(".auto-type", {
+        strings: ["Developer", "Front-end develper", "Programmer"],
+        typeSpeed: 150,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
